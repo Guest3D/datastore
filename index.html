@@ -9,7 +9,7 @@
 
   <script>
     async function loadData() {
-      const res = await fetch("https://guest3d.github.io/datastore/");
+      const res = await fetch("https://guest3d.github.io/datastore/receive");
       const data = await res.json();
       document.getElementById("stats").innerText =
         `User ${data.userId} has ${data.coins} coins and is level ${data.level}`;
